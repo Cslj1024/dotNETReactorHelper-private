@@ -1,0 +1,33 @@
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="dotNETReactorHelper.91455361-f90b-482d-82ae-2730d5aae35b" Version="1.1.0" Language="zh-Hans" Publisher="Company" />
+    <DisplayName>dotNETReactorHelper</DisplayName>
+    <Description xml:space="preserve">新增功能：
+1，可以识别活动解决方案配置 Debug 和 Release 版本
+2，可以在VS输出框输出扩展处理文件的流程以及查看混淆的文件
+3，利用配置文件Config.txt的方式将非本解决方案的dll（引用的dll)进行选择性的执行混淆新增功能：
+1，可以识别活动解决方案配置 Debug 和 Release 版本
+2，可以在VS输出框输出扩展处理的流程以及查看混淆的文件
+3，将非本解决方案的dll（引用的dll)进行选择性的执行混淆</Description>
+  </Metadata>
+  <Installation AllUsers="true">
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[13.0, 20.0)">
+      <ProductArchitecture>amd64</ProductArchitecture>
+    </InstallationTarget>
+    <InstallationTarget Version="[13.0,20.0)" Id="Microsoft.VisualStudio.Pro">
+      <ProductArchitecture>amd64</ProductArchitecture>
+    </InstallationTarget>
+    <InstallationTarget Version="[13.0,20.0)" Id="Microsoft.VisualStudio.Enterprise">
+      <ProductArchitecture>amd64</ProductArchitecture>
+    </InstallationTarget>
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.5,4.9)" />
+  </Dependencies>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.0,20.0)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="dotNETReactorHelper.pkgdef" />
+  </Assets>
+</PackageManifest>
