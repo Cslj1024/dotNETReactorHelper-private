@@ -313,30 +313,9 @@ namespace dotNETReactorHelper
             try
             {
                 // 添加从 Config.txt 读取的路径
-                dllPath.AddRange(outputPaths.Where(path => path.EndsWith(".dll")));
+                //dllPath.AddRange(outputPaths.Where(path => path.EndsWith(".dll")));
                 await WriteLogAsync("从config.txt中读取信息");
 
-                //foreach (string line in outputPaths)
-                //{
-                //    if (line.StartsWith("\"") && line.EndsWith("\""))
-                //    {
-                //        line = line.Substring(1, line.Length - 2);
-                //    }
-                //    if (line.EndsWith(".exe"))
-                //    {
-                //        exePath.Add(line);
-                //        folder = Path.GetDirectoryName(line);
-                //        await WriteLogAsync("exe所在文件夹");
-                //        await WriteLogAsync(folder);
-                //    }
-                //    else if (line.EndsWith(".dll"))
-                //    {
-                //        dllPath.Add(line);
-                //        folder = Path.GetDirectoryName(line);
-                //        await WriteLogAsync("dll所在文件夹");
-                //        await WriteLogAsync(folder);
-                //    }
-                //}
                 foreach (string line in outputPaths)
                 {
                     string lineCopy = string.Copy(line);
@@ -521,7 +500,7 @@ namespace dotNETReactorHelper
             finfo.Invoke(m, paras);
         }
 
-        private void addDlls(Type t2, Form m)
+        private async void addDlls(Type t2, Form m)
         {
             foreach (string path in dllPath)
             {

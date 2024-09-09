@@ -205,11 +205,8 @@ D:\Projects\VSIX Project\GitHouse\1.1.0\dotNETReactorHelper\obj\Debug\dotNETReac
 D:\Projects\VSIX Project\GitHouse\1.1.0\dotNETReactorHelper\obj\Debug\_EmptyResource.resources
 D:\Projects\VSIX Project\GitHouse\1.1.0\dotNETReactorHelper\obj\Debug\dotNETReactorHelper.csproj.GenerateResource.cache
 D:\Projects\VSIX Project\GitHouse\1.1.0\dotNETReactorHelper\obj\Debug\dotNETReactorHelperPackage.cto
-D:\Projects\VSIX Project\GitHouse\1.1.0\dotNETReactorHelper\obj\Debug\VSCT.read.1.tlog
-D:\Projects\VSIX Project\GitHouse\1.1.0\dotNETReactorHelper\obj\Debug\VSCT.write.1.tlog
 D:\Projects\VSIX Project\GitHouse\1.1.0\dotNETReactorHelper\obj\Debug\resources.json
 D:\Projects\VSIX Project\GitHouse\1.1.0\dotNETReactorHelper\obj\Debug\ctoFiles.json
-D:\Projects\VSIX Project\GitHouse\1.1.0\dotNETReactorHelper\obj\Debug\_EmptyResource.resources.original
 D:\Projects\VSIX Project\GitHouse\1.1.0\dotNETReactorHelper\obj\Debug\mergeCto.cache
 D:\Projects\VSIX Project\GitHouse\1.1.0\dotNETReactorHelper\obj\Debug\dotNETReactorHelper.csproj.CoreCompileInputs.cache
 D:\Projects\VSIX Project\GitHouse\1.1.0\dotNETReactorHelper\obj\Debug\dotNETRe.F229D292.Up2Date
@@ -221,3 +218,6 @@ D:\Projects\VSIX Project\GitHouse\1.1.0\dotNETReactorHelper\obj\Debug\extension.
 D:\Projects\VSIX Project\GitHouse\1.1.0\dotNETReactorHelper\obj\Debug\files.json
 D:\Projects\VSIX Project\GitHouse\1.1.0\dotNETReactorHelper\obj\Debug\createTemplateManifests.cache
 D:\Projects\VSIX Project\GitHouse\1.1.0\dotNETReactorHelper\bin\Debug\extension.vsixmanifest
+D:\Projects\VSIX Project\GitHouse\1.1.0\dotNETReactorHelper\obj\Debug\VSCT.read.1.tlog
+D:\Projects\VSIX Project\GitHouse\1.1.0\dotNETReactorHelper\obj\Debug\VSCT.write.1.tlog
+D:\Projects\VSIX Project\GitHouse\1.1.0\dotNETReactorHelper\obj\Debug\_EmptyResource.resources.original
