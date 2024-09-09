@@ -1,0 +1,84 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\jun.luo\\Desktop\\dotNETReactorHelper (2)\\dotNETReactorHelper\\dotNETReactorHelper.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\jun.luo\\Desktop\\dotNETReactorHelper (2)\\dotNETReactorHelper\\dotNETReactorHelper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jun.luo\\Desktop\\dotNETReactorHelper (2)\\dotNETReactorHelper\\dotNETReactorHelper.csproj",
+        "projectName": "dotNETReactorHelper",
+        "projectPath": "C:\\Users\\jun.luo\\Desktop\\dotNETReactorHelper (2)\\dotNETReactorHelper\\dotNETReactorHelper.csproj",
+        "packagesPath": "C:\\Users\\jun.luo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jun.luo\\Desktop\\dotNETReactorHelper (2)\\dotNETReactorHelper\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jun.luo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Microsoft.VSSDK.BuildTools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[17.11.435, )"
+            },
+            "Microsoft.VisualStudio.SDK": {
+              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[17.11.40262, )"
+            },
+            "Microsoft.VisualStudio.Shell.15.0": {
+              "target": "Package",
+              "version": "[17.11.40262, )"
+            },
+            "envdte": {
+              "target": "Package",
+              "version": "[17.11.40262, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-arm64": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
