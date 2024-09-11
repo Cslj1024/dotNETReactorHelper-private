@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="dotNETReactorHelper.91455361-f90b-482d-82ae-2730d5aae35b" Version="1.1.0" Language="zh-Hans" Publisher="Company" />
+        <Identity Id="dotNETReactorHelper.91455361-f90b-482d-82ae-2730d5aae35b" Version="1.1.1" Language="zh-Hans" Publisher="Company" />
         <DisplayName>dotNETReactorHelper</DisplayName>
         <Description xml:space="preserve">新增功能：
 1，可以识别活动解决方案配置 Debug 和 Release 版本

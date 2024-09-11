@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9bZRiy/piWQ=",
+  "dgSpecHash": "ejRhtKLI5Fw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jun.luo\\Desktop\\dotNETReactorHelper (2)\\dotNETReactorHelper\\dotNETReactorHelper.csproj",
+  "projectFilePath": "D:\\Projects\\VSIX Project\\GitHouse\\1.0\\dotNETReactorHelper\\dotNETReactorHelper\\dotNETReactorHelper.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jun.luo\\.nuget\\packages\\envdte\\17.11.40262\\envdte.17.11.40262.nupkg.sha512",
     "C:\\Users\\jun.luo\\.nuget\\packages\\envdte100\\17.11.40262\\envdte100.17.11.40262.nupkg.sha512",

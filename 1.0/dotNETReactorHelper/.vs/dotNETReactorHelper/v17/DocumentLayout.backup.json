@@ -1,29 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jun.luo\\Desktop\\dotNETReactorHelper (2)\\",
+  "WorkspaceRootPath": "D:\\Projects\\VSIX Project\\GitHouse\\1.0\\dotNETReactorHelper\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1319B8E9-574C-45A3-A8D4-5258955762C1}|dotNETReactorHelper\\dotNETReactorHelper.csproj|c:\\users\\jun.luo\\desktop\\dotnetreactorhelper (2)\\dotnetreactorhelper\\reactorhelpercommand1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1319B8E9-574C-45A3-A8D4-5258955762C1}|dotNETReactorHelper\\dotNETReactorHelper.csproj|d:\\projects\\vsix project\\githouse\\1.0\\dotnetreactorhelper\\dotnetreactorhelper\\reactorhelpercommand1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1319B8E9-574C-45A3-A8D4-5258955762C1}|dotNETReactorHelper\\dotNETReactorHelper.csproj|solutionrelative:dotnetreactorhelper\\reactorhelpercommand1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1319B8E9-574C-45A3-A8D4-5258955762C1}|dotNETReactorHelper\\dotNETReactorHelper.csproj|C:\\Users\\jun.luo\\Desktop\\dotNETReactorHelper (2)\\dotnetreactorhelper\\dotnetreactorhelperpackage.vsct||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{1319B8E9-574C-45A3-A8D4-5258955762C1}|dotNETReactorHelper\\dotNETReactorHelper.csproj|solutionrelative:dotnetreactorhelper\\dotnetreactorhelperpackage.vsct||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1319B8E9-574C-45A3-A8D4-5258955762C1}|dotNETReactorHelper\\dotNETReactorHelper.csproj|C:\\Users\\jun.luo\\Desktop\\dotNETReactorHelper (2)\\dotnetreactorhelper\\loghelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1319B8E9-574C-45A3-A8D4-5258955762C1}|dotNETReactorHelper\\dotNETReactorHelper.csproj|D:\\Projects\\VSIX Project\\GitHouse\\1.0\\dotNETReactorHelper\\dotnetreactorhelper\\loghelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1319B8E9-574C-45A3-A8D4-5258955762C1}|dotNETReactorHelper\\dotNETReactorHelper.csproj|solutionrelative:dotnetreactorhelper\\loghelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1319B8E9-574C-45A3-A8D4-5258955762C1}|dotNETReactorHelper\\dotNETReactorHelper.csproj|C:\\Users\\jun.luo\\Desktop\\dotNETReactorHelper (2)\\dotnetreactorhelper\\dotnetreactorhelperpackage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1319B8E9-574C-45A3-A8D4-5258955762C1}|dotNETReactorHelper\\dotNETReactorHelper.csproj|D:\\Projects\\VSIX Project\\GitHouse\\1.0\\dotNETReactorHelper\\dotnetreactorhelper\\dotnetreactorhelperpackage.vsct||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{1319B8E9-574C-45A3-A8D4-5258955762C1}|dotNETReactorHelper\\dotNETReactorHelper.csproj|solutionrelative:dotnetreactorhelper\\dotnetreactorhelperpackage.vsct||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1319B8E9-574C-45A3-A8D4-5258955762C1}|dotNETReactorHelper\\dotNETReactorHelper.csproj|D:\\Projects\\VSIX Project\\GitHouse\\1.0\\dotNETReactorHelper\\dotnetreactorhelper\\dotnetreactorhelperpackage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1319B8E9-574C-45A3-A8D4-5258955762C1}|dotNETReactorHelper\\dotNETReactorHelper.csproj|solutionrelative:dotnetreactorhelper\\dotnetreactorhelperpackage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1319B8E9-574C-45A3-A8D4-5258955762C1}|dotNETReactorHelper\\dotNETReactorHelper.csproj|C:\\Users\\jun.luo\\Desktop\\dotNETReactorHelper (2)\\dotnetreactorhelper\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1319B8E9-574C-45A3-A8D4-5258955762C1}|dotNETReactorHelper\\dotNETReactorHelper.csproj|D:\\Projects\\VSIX Project\\GitHouse\\1.0\\dotNETReactorHelper\\dotnetreactorhelper\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1319B8E9-574C-45A3-A8D4-5258955762C1}|dotNETReactorHelper\\dotNETReactorHelper.csproj|solutionrelative:dotnetreactorhelper\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1319B8E9-574C-45A3-A8D4-5258955762C1}|dotNETReactorHelper\\dotNETReactorHelper.csproj|C:\\Users\\jun.luo\\Desktop\\dotNETReactorHelper (2)\\dotnetreactorhelper\\source.extension.vsixmanifest||{2868F8ED-DE25-439D-9F59-AD52458E9328}",
+      "AbsoluteMoniker": "D:0:0:{1319B8E9-574C-45A3-A8D4-5258955762C1}|dotNETReactorHelper\\dotNETReactorHelper.csproj|D:\\Projects\\VSIX Project\\GitHouse\\1.0\\dotNETReactorHelper\\dotnetreactorhelper\\source.extension.vsixmanifest||{2868F8ED-DE25-439D-9F59-AD52458E9328}",
       "RelativeMoniker": "D:0:0:{1319B8E9-574C-45A3-A8D4-5258955762C1}|dotNETReactorHelper\\dotNETReactorHelper.csproj|solutionrelative:dotnetreactorhelper\\source.extension.vsixmanifest||{2868F8ED-DE25-439D-9F59-AD52458E9328}"
     },
     {
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,113 +78,135 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LogHelper.cs",
-              "DocumentMoniker": "C:\\Users\\jun.luo\\Desktop\\dotNETReactorHelper (2)\\dotNETReactorHelper\\LogHelper.cs",
-              "RelativeDocumentMoniker": "dotNETReactorHelper\\LogHelper.cs",
-              "ToolTip": "C:\\Users\\jun.luo\\Desktop\\dotNETReactorHelper (2)\\dotNETReactorHelper\\LogHelper.cs",
-              "RelativeToolTip": "dotNETReactorHelper\\LogHelper.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T11:33:02.412Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Projects\\C#\\ReactorHelper\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\C#\\ReactorHelper\\Program.cs",
               "ToolTip": "D:\\Projects\\C#\\ReactorHelper\\Program.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\C#\\ReactorHelper\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T09:45:17.512Z"
+              "WhenOpened": "2024-08-27T09:45:17.512Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "LogHelper.cs",
               "DocumentMoniker": "D:\\Projects\\C#\\ReactorHelper\\LogHelper.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\C#\\ReactorHelper\\LogHelper.cs",
               "ToolTip": "D:\\Projects\\C#\\ReactorHelper\\LogHelper.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\C#\\ReactorHelper\\LogHelper.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAawCEAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T09:45:01.279Z"
+              "WhenOpened": "2024-08-27T09:45:01.279Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "ReactorHelper.cs",
               "DocumentMoniker": "D:\\Projects\\C#\\ReactorHelper\\ReactorHelper.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\C#\\ReactorHelper\\ReactorHelper.cs",
               "ToolTip": "D:\\Projects\\C#\\ReactorHelper\\ReactorHelper.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\C#\\ReactorHelper\\ReactorHelper.cs",
               "ViewState": "AgIAANwAAAAAAAAAAAAkwCkBAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T09:30:47.454Z"
+              "WhenOpened": "2024-08-27T09:30:47.454Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "Form1.cs [\u8BBE\u8BA1]",
               "DocumentMoniker": "D:\\Projects\\C#\\ReactorHelper\\Form1.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\C#\\ReactorHelper\\Form1.cs",
               "ToolTip": "D:\\Projects\\C#\\ReactorHelper\\Form1.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "..\\..\\..\\..\\C#\\ReactorHelper\\Form1.cs [\u8BBE\u8BA1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T09:20:04.696Z"
+              "WhenOpened": "2024-08-27T09:20:04.696Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "source.extension.vsixmanifest [Design]",
-              "DocumentMoniker": "C:\\Users\\jun.luo\\Desktop\\dotNETReactorHelper (2)\\dotNETReactorHelper\\source.extension.vsixmanifest",
+              "DocumentMoniker": "D:\\Projects\\VSIX Project\\GitHouse\\1.0\\dotNETReactorHelper\\dotNETReactorHelper\\source.extension.vsixmanifest",
               "RelativeDocumentMoniker": "dotNETReactorHelper\\source.extension.vsixmanifest",
-              "ToolTip": "D:\\Projects\\VSIX Project\\dotNETReactorHelper (2)\\dotNETReactorHelper\\source.extension.vsixmanifest [Design]",
+              "ToolTip": "D:\\Projects\\VSIX Project\\GitHouse\\1.0\\dotNETReactorHelper\\dotNETReactorHelper\\source.extension.vsixmanifest [Design]",
+              "RelativeToolTip": "dotNETReactorHelper\\source.extension.vsixmanifest [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
-              "WhenOpened": "2024-08-27T02:14:17.427Z"
+              "WhenOpened": "2024-08-27T02:14:17.427Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\jun.luo\\Desktop\\dotNETReactorHelper (2)\\dotNETReactorHelper\\Properties\\AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\Projects\\VSIX Project\\GitHouse\\1.0\\dotNETReactorHelper\\dotNETReactorHelper\\Properties\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "dotNETReactorHelper\\Properties\\AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\jun.luo\\Desktop\\dotNETReactorHelper (2)\\dotNETReactorHelper\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "D:\\Projects\\VSIX Project\\GitHouse\\1.0\\dotNETReactorHelper\\dotNETReactorHelper\\Properties\\AssemblyInfo.cs",
               "RelativeToolTip": "dotNETReactorHelper\\Properties\\AssemblyInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T02:42:30.31Z"
+              "WhenOpened": "2024-08-19T02:42:30.31Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "dotNETReactorHelperPackage.vsct",
-              "DocumentMoniker": "C:\\Users\\jun.luo\\Desktop\\dotNETReactorHelper (2)\\dotNETReactorHelper\\dotNETReactorHelperPackage.vsct",
+              "DocumentMoniker": "D:\\Projects\\VSIX Project\\GitHouse\\1.0\\dotNETReactorHelper\\dotNETReactorHelper\\dotNETReactorHelperPackage.vsct",
               "RelativeDocumentMoniker": "dotNETReactorHelper\\dotNETReactorHelperPackage.vsct",
-              "ToolTip": "C:\\Users\\jun.luo\\Desktop\\dotNETReactorHelper (2)\\dotNETReactorHelper\\dotNETReactorHelperPackage.vsct",
+              "ToolTip": "D:\\Projects\\VSIX Project\\GitHouse\\1.0\\dotNETReactorHelper\\dotNETReactorHelper\\dotNETReactorHelperPackage.vsct",
               "RelativeToolTip": "dotNETReactorHelper\\dotNETReactorHelperPackage.vsct",
               "ViewState": "AgIAABsAAAAAAAAAAAAAACcAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
-              "WhenOpened": "2024-08-16T06:45:03.228Z"
+              "WhenOpened": "2024-08-16T06:45:03.228Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ReactorHelperCommand1.cs",
-              "DocumentMoniker": "C:\\Users\\jun.luo\\Desktop\\dotNETReactorHelper (2)\\dotNETReactorHelper\\ReactorHelperCommand1.cs",
+              "DocumentMoniker": "D:\\Projects\\VSIX Project\\GitHouse\\1.0\\dotNETReactorHelper\\dotNETReactorHelper\\ReactorHelperCommand1.cs",
               "RelativeDocumentMoniker": "dotNETReactorHelper\\ReactorHelperCommand1.cs",
-              "ToolTip": "C:\\Users\\jun.luo\\Desktop\\dotNETReactorHelper (2)\\dotNETReactorHelper\\ReactorHelperCommand1.cs",
+              "ToolTip": "D:\\Projects\\VSIX Project\\GitHouse\\1.0\\dotNETReactorHelper\\dotNETReactorHelper\\ReactorHelperCommand1.cs",
               "RelativeToolTip": "dotNETReactorHelper\\ReactorHelperCommand1.cs",
-              "ViewState": "AgIAAPgBAAAAAAAAAAAuwEwCAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAPQAAAAAAAAAAAAlwEwCAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-16T06:33:58.678Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LogHelper.cs",
+              "DocumentMoniker": "D:\\Projects\\VSIX Project\\GitHouse\\1.0\\dotNETReactorHelper\\dotNETReactorHelper\\LogHelper.cs",
+              "RelativeDocumentMoniker": "dotNETReactorHelper\\LogHelper.cs",
+              "ToolTip": "D:\\Projects\\VSIX Project\\GitHouse\\1.0\\dotNETReactorHelper\\dotNETReactorHelper\\LogHelper.cs",
+              "RelativeToolTip": "dotNETReactorHelper\\LogHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T11:33:02.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "dotNETReactorHelperPackage.cs",
-              "DocumentMoniker": "C:\\Users\\jun.luo\\Desktop\\dotNETReactorHelper (2)\\dotNETReactorHelper\\dotNETReactorHelperPackage.cs",
+              "DocumentMoniker": "D:\\Projects\\VSIX Project\\GitHouse\\1.0\\dotNETReactorHelper\\dotNETReactorHelper\\dotNETReactorHelperPackage.cs",
               "RelativeDocumentMoniker": "dotNETReactorHelper\\dotNETReactorHelperPackage.cs",
-              "ToolTip": "C:\\Users\\jun.luo\\Desktop\\dotNETReactorHelper (2)\\dotNETReactorHelper\\dotNETReactorHelperPackage.cs",
+              "ToolTip": "D:\\Projects\\VSIX Project\\GitHouse\\1.0\\dotNETReactorHelper\\dotNETReactorHelper\\dotNETReactorHelperPackage.cs",
               "RelativeToolTip": "dotNETReactorHelper\\dotNETReactorHelperPackage.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADgvxIAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T06:33:29.834Z"
+              "WhenOpened": "2024-08-16T06:33:29.834Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jun.luo\\Desktop\\dotNETReactorHelper (2)\\dotNETReactorHelper\\dotNETReactorHelper.csproj": {}
+    "D:\\Projects\\VSIX Project\\GitHouse\\1.0\\dotNETReactorHelper\\dotNETReactorHelper\\dotNETReactorHelper.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jun.luo\\Desktop\\dotNETReactorHelper (2)\\dotNETReactorHelper\\dotNETReactorHelper.csproj": {
+    "D:\\Projects\\VSIX Project\\GitHouse\\1.0\\dotNETReactorHelper\\dotNETReactorHelper\\dotNETReactorHelper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jun.luo\\Desktop\\dotNETReactorHelper (2)\\dotNETReactorHelper\\dotNETReactorHelper.csproj",
+        "projectUniqueName": "D:\\Projects\\VSIX Project\\GitHouse\\1.0\\dotNETReactorHelper\\dotNETReactorHelper\\dotNETReactorHelper.csproj",
         "projectName": "dotNETReactorHelper",
-        "projectPath": "C:\\Users\\jun.luo\\Desktop\\dotNETReactorHelper (2)\\dotNETReactorHelper\\dotNETReactorHelper.csproj",
+        "projectPath": "D:\\Projects\\VSIX Project\\GitHouse\\1.0\\dotNETReactorHelper\\dotNETReactorHelper\\dotNETReactorHelper.csproj",
         "packagesPath": "C:\\Users\\jun.luo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jun.luo\\Desktop\\dotNETReactorHelper (2)\\dotNETReactorHelper\\obj\\",
+        "outputPath": "D:\\Projects\\VSIX Project\\GitHouse\\1.0\\dotNETReactorHelper\\dotNETReactorHelper\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
