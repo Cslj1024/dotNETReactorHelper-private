@@ -74,8 +74,8 @@ namespace dotNETReactorHelper
                     var exeAndDllPaths = csprojPaths.SelectMany(path => GetExeAndDllPaths(path, activeConfiguration)).ToList();
                     outputPaths.AddRange(exeAndDllPaths);
 
-                    // 从 .csproj 文件中获取引用的 .dll 文件路径
-                    var referencedDllPaths = csprojPaths.SelectMany(path => GetReferencedDllPaths(path, activeConfiguration)).ToList();
+                    // 从dll文件夹和活动解决方案配置（Debug或Release）中获取引用的 .dll 文件路径
+                    var referencedDllPaths = GetReferencedDllPaths(solutionDirectory, activeConfiguration).ToList();
 
                     // 打开 DisPlayForm 让用户选择要混淆的 DLL
                     using (var displayForm = new DisPlayForm(referencedDllPaths))
@@ -224,25 +224,86 @@ namespace dotNETReactorHelper
             return outputPath;
         }
 
-        private static IEnumerable<string> GetReferencedDllPaths(string csprojFullPath, string activeConfiguration)
+        //获取从dll文件夹和活动解决方案配置（Debug或Release）中获取到的dll文件
+        private static IEnumerable<string> GetReferencedDllPaths(string solutionDirectory, string activeConfiguration)
         {
-            var dllPaths = new List<string>();
+            var dllPaths = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+            var solutionFilePath = Directory.GetFiles(solutionDirectory, "*.sln").FirstOrDefault();
 
-            if (File.Exists(csprojFullPath))
+            if (string.IsNullOrEmpty(solutionFilePath))
             {
-                var xdoc = XDocument.Load(csprojFullPath);
-                XNamespace ns = xdoc.Root.Name.Namespace;
-
-                var projectDirectory = Path.GetDirectoryName(csprojFullPath);
-
-                var references = xdoc.Descendants(ns + "Reference")
-                                     .Where(r => r.Element(ns + "HintPath") != null)
-                                     .Select(r => Path.GetFullPath(Path.Combine(projectDirectory, r.Element(ns + "HintPath").Value)));
-
-                dllPaths.AddRange(references);
+                throw new FileNotFoundException("Solution file (.sln) not found.");
             }
 
-            return dllPaths;
+            // 用于存储输出类型为 Library 的项目生成的 dll 文件名
+            var libraryDlls = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+
+            // 读取 .sln 文件并处理项目
+            foreach (var line in File.ReadAllLines(solutionFilePath))
+            {
+                if (line.StartsWith("Project("))
+                {
+                    // 获取项目的相对路径
+                    var projectPath = line.Split(',')[1].Trim().Trim('"');
+                    var fullPath = Path.Combine(Path.GetDirectoryName(solutionFilePath), projectPath);
+
+                    if (File.Exists(fullPath) && fullPath.EndsWith(".csproj"))
+                    {
+                        var projectDirectory = Path.GetDirectoryName(fullPath);
+                        var projectName = Path.GetFileNameWithoutExtension(fullPath);
+
+                        // 读取 .csproj 文件内容
+                        var csprojContent = File.ReadAllText(fullPath);
+                        if (csprojContent.Contains("<OutputType>Library</OutputType>"))
+                        {
+                            // 构建项目的输出目录，根据活动配置生成
+                            var outputFolderPath = Path.Combine(projectDirectory, "bin", activeConfiguration);
+                            var outputDllPath = Path.Combine(outputFolderPath, $"{projectName}.dll");
+
+                            if (File.Exists(outputDllPath))
+                            {
+                                libraryDlls.Add(Path.GetFileName(outputDllPath));
+                            }
+                        }
+                    }
+                }
+            }
+
+            // 构建 dll 文件夹和活动配置文件夹路径
+            var dllFolderPath = Path.Combine(solutionDirectory, "dll");
+            var activeConfigFolderPath = Path.Combine(solutionDirectory, activeConfiguration);
+
+            // 遍历 dll 文件夹中的 .dll 文件（如果文件夹存在）
+            if (Directory.Exists(dllFolderPath))
+            {
+                var dllFiles = Directory.GetFiles(dllFolderPath, "*.dll", SearchOption.AllDirectories);
+                foreach (var dllFile in dllFiles)
+                {
+                    var fileName = Path.GetFileName(dllFile);
+                    if (!dllPaths.ContainsKey(fileName) && !libraryDlls.Contains(fileName))
+                    {
+                        dllPaths[fileName] = dllFile;
+                    }
+                }
+            }
+
+            // 遍历活动配置文件夹中的 .dll 文件（如果文件夹存在）
+            if (Directory.Exists(activeConfigFolderPath))
+            {
+                var activeConfigDllFiles = Directory.GetFiles(activeConfigFolderPath, "*.dll", SearchOption.AllDirectories);
+                foreach (var dllFile in activeConfigDllFiles)
+                {
+                    var fileName = Path.GetFileName(dllFile);
+                    // 覆盖 dll 文件夹中的相同文件，优先保存活动配置文件夹中的文件路径
+                    if (!libraryDlls.Contains(fileName))
+                    {
+                        dllPaths[fileName] = dllFile;
+                    }
+                }
+            }
+
+            // 返回去重后的 dll 文件路径列表
+            return dllPaths.Values;
         }
 
         private async Task CleanAndBuildSolutionAsync(DTE2 dte)
