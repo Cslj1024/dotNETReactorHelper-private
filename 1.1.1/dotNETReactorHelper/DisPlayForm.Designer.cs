@@ -19,6 +19,7 @@
             this.checkedListBoxDisPlay = new System.Windows.Forms.CheckedListBox();
             this.checkBoxAll = new System.Windows.Forms.CheckBox();
             this.buttonEnter = new System.Windows.Forms.Button();
+            this.buttonResume = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -27,9 +28,10 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.909091F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 95.09091F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 193F));
             this.tableLayoutPanel1.Controls.Add(this.checkedListBoxDisPlay, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.checkBoxAll, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.buttonResume, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.buttonEnter, 1, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -50,11 +52,12 @@
             this.checkedListBoxDisPlay.Name = "checkedListBoxDisPlay";
             this.checkedListBoxDisPlay.Size = new System.Drawing.Size(747, 207);
             this.checkedListBoxDisPlay.TabIndex = 0;
+            this.checkedListBoxDisPlay.SelectedIndexChanged += new System.EventHandler(this.checkedListBoxDisPlay_SelectedIndexChanged);
             // 
             // checkBoxAll
             // 
             this.checkBoxAll.AutoSize = true;
-            this.checkBoxAll.Location = new System.Drawing.Point(38, 216);
+            this.checkBoxAll.Location = new System.Drawing.Point(30, 216);
             this.checkBoxAll.Name = "checkBoxAll";
             this.checkBoxAll.Size = new System.Drawing.Size(59, 19);
             this.checkBoxAll.TabIndex = 1;
@@ -64,7 +67,7 @@
             // buttonEnter
             // 
             this.buttonEnter.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonEnter.Location = new System.Drawing.Point(333, 256);
+            this.buttonEnter.Location = new System.Drawing.Point(249, 256);
             this.buttonEnter.Name = "buttonEnter";
             this.buttonEnter.Size = new System.Drawing.Size(88, 32);
             this.buttonEnter.TabIndex = 2;
@@ -72,12 +75,24 @@
             this.buttonEnter.UseVisualStyleBackColor = true;
             this.buttonEnter.Click += new System.EventHandler(this.buttonEnter_Click);
             // 
+            // buttonResume
+            // 
+            this.buttonResume.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonResume.Location = new System.Drawing.Point(595, 256);
+            this.buttonResume.Name = "buttonResume";
+            this.buttonResume.Size = new System.Drawing.Size(121, 32);
+            this.buttonResume.TabIndex = 3;
+            this.buttonResume.Text = "恢复默认设置";
+            this.buttonResume.UseVisualStyleBackColor = true;
+            this.buttonResume.Click += new System.EventHandler(this.buttonResume_Click);
+            // 
             // DisPlayForm
             // 
             this.ClientSize = new System.Drawing.Size(753, 305);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "DisPlayForm";
             this.Text = "选择需要混淆的 DLL";
+            this.Load += new System.EventHandler(this.DisPlayForm_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -88,5 +103,6 @@
         private System.Windows.Forms.CheckedListBox checkedListBoxDisPlay;
         private System.Windows.Forms.CheckBox checkBoxAll;
         private System.Windows.Forms.Button buttonEnter;
+        private System.Windows.Forms.Button buttonResume;
     }
 }

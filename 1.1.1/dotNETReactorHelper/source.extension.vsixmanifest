@@ -3,7 +3,17 @@
     <Metadata>
         <Identity Id="dotNETReactorHelper.bdc48c21-1f7c-44dd-813f-4983a74f0288" Version="1.1.1" Language="zh-CN" Publisher="LJ" />
         <DisplayName>dotNETReactorHelper</DisplayName>
-        <Description xml:space="preserve">Empty VSIX Project.</Description>
+        <Description xml:space="preserve">新增功能：
+1，可以识别活动解决方案配置 Debug 和 Release 版本
+2，可以在VS输出框输出扩展处理的流程以及查看混淆的文件
+3，将非本解决方案的dll（引用的dll)进行选择性的执行混淆新增功能：
+1，可以识别活动解决方案配置 Debug 和 Release 版本
+2，可以在VS输出框输出扩展处理的流程以及查看混淆的文件
+3，将非本解决方案的dll（引用的dll)进行选择性的执行混淆
+4,   可以将之前选择的dll文件（即非本解决方案的dll）可以自动的选中新增功能：
+1，可以识别活动解决方案配置 Debug 和 Release 版本
+2，可以在VS输出框输出扩展处理的 AllUsers="true"流程以及查看混淆的文件
+3，将非本解决方案的dll（引用的dll)进行选择性的执行混淆</Description>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)">
