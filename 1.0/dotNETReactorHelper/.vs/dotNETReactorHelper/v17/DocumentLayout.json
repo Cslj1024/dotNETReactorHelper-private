@@ -46,51 +46,65 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ReactorHelper.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\ReactorHelper\\ReactorHelper.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\C#\\ReactorHelper\\ReactorHelper.cs",
+              "ToolTip": "D:\\Projects\\C#\\ReactorHelper\\ReactorHelper.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\C#\\ReactorHelper\\ReactorHelper.cs",
+              "ViewState": "AgIAANwAAAAAAAAAAAAkwCkBAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T09:30:47.454Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Projects\\C#\\ReactorHelper\\Program.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\C#\\ReactorHelper\\Program.cs",
-              "ToolTip": "D:\\Projects\\C#\\ReactorHelper\\Program.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\C#\\ReactorHelper\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "Form1.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "D:\\Projects\\C#\\ReactorHelper\\Form1.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\C#\\ReactorHelper\\Form1.cs",
+              "ToolTip": "D:\\Projects\\C#\\ReactorHelper\\Form1.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "..\\..\\..\\..\\C#\\ReactorHelper\\Form1.cs [\u8BBE\u8BA1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T09:45:17.512Z",
+              "WhenOpened": "2024-08-27T09:20:04.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "source.extension.vsixmanifest [Design]",
+              "DocumentMoniker": "D:\\Projects\\VSIX Project\\GitHouse\\1.0\\dotNETReactorHelper\\dotNETReactorHelper\\source.extension.vsixmanifest",
+              "RelativeDocumentMoniker": "dotNETReactorHelper\\source.extension.vsixmanifest",
+              "ToolTip": "D:\\Projects\\VSIX Project\\GitHouse\\1.0\\dotNETReactorHelper\\dotNETReactorHelper\\source.extension.vsixmanifest [Design]",
+              "RelativeToolTip": "dotNETReactorHelper\\source.extension.vsixmanifest [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
+              "WhenOpened": "2024-08-27T02:14:17.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\Projects\\VSIX Project\\GitHouse\\1.0\\dotNETReactorHelper\\dotNETReactorHelper\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "dotNETReactorHelper\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "D:\\Projects\\VSIX Project\\GitHouse\\1.0\\dotNETReactorHelper\\dotNETReactorHelper\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "dotNETReactorHelper\\Properties\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T02:42:30.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReactorHelperCommand1.cs",
+              "DocumentMoniker": "D:\\Projects\\VSIX Project\\GitHouse\\1.0\\dotNETReactorHelper\\dotNETReactorHelper\\ReactorHelperCommand1.cs",
+              "RelativeDocumentMoniker": "dotNETReactorHelper\\ReactorHelperCommand1.cs",
+              "ToolTip": "D:\\Projects\\VSIX Project\\GitHouse\\1.0\\dotNETReactorHelper\\dotNETReactorHelper\\ReactorHelperCommand1.cs",
+              "RelativeToolTip": "dotNETReactorHelper\\ReactorHelperCommand1.cs",
+              "ViewState": "AgIAAJIBAAAAAAAAAAAQwHIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T06:33:58.678Z",
               "EditorCaption": ""
             },
             {
@@ -103,58 +117,19 @@
               "RelativeToolTip": "..\\..\\..\\..\\C#\\ReactorHelper\\LogHelper.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAawCEAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T09:45:01.279Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-27T09:45:01.279Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ReactorHelper.cs",
-              "DocumentMoniker": "D:\\Projects\\C#\\ReactorHelper\\ReactorHelper.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\C#\\ReactorHelper\\ReactorHelper.cs",
-              "ToolTip": "D:\\Projects\\C#\\ReactorHelper\\ReactorHelper.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\C#\\ReactorHelper\\ReactorHelper.cs",
-              "ViewState": "AgIAANwAAAAAAAAAAAAkwCkBAAAfAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\ReactorHelper\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\C#\\ReactorHelper\\Program.cs",
+              "ToolTip": "D:\\Projects\\C#\\ReactorHelper\\Program.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\C#\\ReactorHelper\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T09:30:47.454Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Form1.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "D:\\Projects\\C#\\ReactorHelper\\Form1.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\C#\\ReactorHelper\\Form1.cs",
-              "ToolTip": "D:\\Projects\\C#\\ReactorHelper\\Form1.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "..\\..\\..\\..\\C#\\ReactorHelper\\Form1.cs [\u8BBE\u8BA1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T09:20:04.696Z",
-              "EditorCaption": " [\u8BBE\u8BA1]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "source.extension.vsixmanifest [Design]",
-              "DocumentMoniker": "D:\\Projects\\VSIX Project\\GitHouse\\1.0\\dotNETReactorHelper\\dotNETReactorHelper\\source.extension.vsixmanifest",
-              "RelativeDocumentMoniker": "dotNETReactorHelper\\source.extension.vsixmanifest",
-              "ToolTip": "D:\\Projects\\VSIX Project\\GitHouse\\1.0\\dotNETReactorHelper\\dotNETReactorHelper\\source.extension.vsixmanifest [Design]",
-              "RelativeToolTip": "dotNETReactorHelper\\source.extension.vsixmanifest [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
-              "WhenOpened": "2024-08-27T02:14:17.427Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "D:\\Projects\\VSIX Project\\GitHouse\\1.0\\dotNETReactorHelper\\dotNETReactorHelper\\Properties\\AssemblyInfo.cs",
-              "RelativeDocumentMoniker": "dotNETReactorHelper\\Properties\\AssemblyInfo.cs",
-              "ToolTip": "D:\\Projects\\VSIX Project\\GitHouse\\1.0\\dotNETReactorHelper\\dotNETReactorHelper\\Properties\\AssemblyInfo.cs",
-              "RelativeToolTip": "dotNETReactorHelper\\Properties\\AssemblyInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T02:42:30.31Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-27T09:45:17.512Z"
             },
             {
               "$type": "Document",
@@ -166,21 +141,7 @@
               "RelativeToolTip": "dotNETReactorHelper\\dotNETReactorHelperPackage.vsct",
               "ViewState": "AgIAABsAAAAAAAAAAAAAACcAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
-              "WhenOpened": "2024-08-16T06:45:03.228Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ReactorHelperCommand1.cs",
-              "DocumentMoniker": "D:\\Projects\\VSIX Project\\GitHouse\\1.0\\dotNETReactorHelper\\dotNETReactorHelper\\ReactorHelperCommand1.cs",
-              "RelativeDocumentMoniker": "dotNETReactorHelper\\ReactorHelperCommand1.cs",
-              "ToolTip": "D:\\Projects\\VSIX Project\\GitHouse\\1.0\\dotNETReactorHelper\\dotNETReactorHelper\\ReactorHelperCommand1.cs",
-              "RelativeToolTip": "dotNETReactorHelper\\ReactorHelperCommand1.cs",
-              "ViewState": "AgIAAPQAAAAAAAAAAAAlwEwCAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T06:33:58.678Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-16T06:45:03.228Z"
             },
             {
               "$type": "Document",
@@ -192,8 +153,7 @@
               "RelativeToolTip": "dotNETReactorHelper\\LogHelper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T11:33:02.412Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-27T11:33:02.412Z"
             },
             {
               "$type": "Document",
@@ -205,8 +165,7 @@
               "RelativeToolTip": "dotNETReactorHelper\\dotNETReactorHelperPackage.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADgvxIAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T06:33:29.834Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-16T06:33:29.834Z"
             }
           ]
         }

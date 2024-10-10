@@ -50,7 +50,7 @@ namespace dotNETReactorHelper
                 SelectedDllPaths.Add(item.ToString());
             }
 
-            
+
             SaveSelectedItemsToConfig(SelectedDllPaths);
 
             this.DialogResult = DialogResult.OK;
@@ -59,7 +59,7 @@ namespace dotNETReactorHelper
 
         private void RestoreCheckedItems()
         {
-            
+
             var savedPaths = LoadSelectedItemsFromConfig();
             if (savedPaths != null)
             {
@@ -73,7 +73,7 @@ namespace dotNETReactorHelper
             }
         }
 
-        
+
         private void SaveSelectedItemsToConfig(List<string> selectedPaths)
         {
             try
@@ -87,7 +87,7 @@ namespace dotNETReactorHelper
             }
         }
 
-        
+
         private List<string> LoadSelectedItemsFromConfig()
         {
             try
@@ -103,7 +103,7 @@ namespace dotNETReactorHelper
                     MessageBox.Show("dllconfig.json文件不存在，在当前文件夹" + Application.StartupPath + "中创建dllconfig.json");
                     File.Create(ConfigFilePath);
 
-                    string json = File.ReadAllText(ConfigFilePath); 
+                    string json = File.ReadAllText(ConfigFilePath);
                     return JsonConvert.DeserializeObject<List<string>>(json);
                 }
             }

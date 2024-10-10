@@ -1,0 +1,79 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Projects\\VSIX Project\\GitHouse\\1.1.2\\dotNETReactorHelper\\dotNETReactorHelper.csproj": {}
+  },
+  "projects": {
+    "D:\\Projects\\VSIX Project\\GitHouse\\1.1.2\\dotNETReactorHelper\\dotNETReactorHelper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\VSIX Project\\GitHouse\\1.1.2\\dotNETReactorHelper\\dotNETReactorHelper.csproj",
+        "projectName": "dotNETReactorHelper",
+        "projectPath": "D:\\Projects\\VSIX Project\\GitHouse\\1.1.2\\dotNETReactorHelper\\dotNETReactorHelper.csproj",
+        "packagesPath": "C:\\Users\\jun.luo\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\VSIX Project\\GitHouse\\1.1.2\\dotNETReactorHelper\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\jun.luo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Microsoft.VSSDK.BuildTools": {
+              "target": "Package",
+              "version": "[17.11.435, )"
+            },
+            "Microsoft.VisualStudio.SDK": {
+              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[17.11.40262, )"
+            },
+            "Microsoft.VisualStudio.Shell.15.0": {
+              "target": "Package",
+              "version": "[17.11.40262, )"
+            },
+            "envdte": {
+              "target": "Package",
+              "version": "[17.11.40262, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-arm64": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

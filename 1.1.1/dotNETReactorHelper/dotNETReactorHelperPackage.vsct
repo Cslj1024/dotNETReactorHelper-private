@@ -37,7 +37,12 @@
          must be a menu. -->
     <Groups>
       <Group guid="guiddotNETReactorHelperPackageCmdSet" id="MyMenuGroup" priority="0x0600">
-        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS"/>
+          <!--工具栏-->
+        <!--<Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS"/>-->
+      </Group>
+      <Group guid="guiddotNETReactorHelperPackageCmdSet" id="MyMenuGroup" priority="0x0600">
+          <!--工程文件右键菜单-->
+         <!--<Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_PROJNODE"/>-->   
       </Group>
     </Groups>
 
@@ -71,6 +76,17 @@
       <Bitmap guid="guidImages" href="Resources\ReactorHelperCommand.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough"/>
     </Bitmaps>
   </Commands>
+
+    <CommandPlacements>
+        <CommandPlacement guid="guiddotNETReactorHelperPackageCmdSet" id="MyMenuGroup" priority="0x0600">
+            <!--工具栏-->
+            <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS"/>
+        </CommandPlacement>
+        <CommandPlacement guid="guiddotNETReactorHelperPackageCmdSet" id="MyMenuGroup" priority="0x0600">
+            <!--工程文件右键菜单-->
+            <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_PROJNODE"/>
+        </CommandPlacement>                  
+    </CommandPlacements>  
 
   <Symbols>
     <!-- This is the package guid. -->

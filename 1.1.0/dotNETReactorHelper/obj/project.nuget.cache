@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DG3Luc1zBBs=",
+  "dgSpecHash": "IvWiQtDEc9k=",
   "success": true,
   "projectFilePath": "D:\\Projects\\VSIX Project\\GitHouse\\1.1.0\\dotNETReactorHelper\\dotNETReactorHelper.csproj",
   "expectedPackageFiles": [
@@ -131,12 +131,5 @@
     "C:\\Users\\jun.luo\\.nuget\\packages\\vslangproj80\\17.11.40262\\vslangproj80.17.11.40262.nupkg.sha512",
     "C:\\Users\\jun.luo\\.nuget\\packages\\vslangproj90\\17.11.40262\\vslangproj90.17.11.40262.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "获取包漏洞数据时出错: 无法加载源 https://api.nuget.org/v3/index.json 的服务索引。"
-    }
-  ]
+  "logs": []
 }
