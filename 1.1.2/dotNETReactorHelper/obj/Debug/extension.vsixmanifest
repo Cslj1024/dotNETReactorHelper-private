@@ -2,18 +2,29 @@
   <Metadata>
     <Identity Id="dotNETReactorHelper.e5eeac47-113d-453d-8157-1cd34ed2cded" Version="1.1.2" Language="zh-Hans" Publisher="Company" />
     <DisplayName>dotNETReactorHelper</DisplayName>
-    <Description xml:space="preserve">Empty VSIX Project.</Description>
+    <Description xml:space="preserve">新增功能：
+1，可以识别活动解决方案配置 Debug 和 Release 版本，再根据其版本来进行重新生成解决方案和后续文件的处理
+2，可以在VS输出框输出扩展处理的流程以及查看混淆的文件
+3，新增了窗体便于用户来选择dll文件来执行混淆
+4，将非本解决方案的dll（引用的dll)进行选择性的执行混淆
+5，可以将之前选择的dll文件（即非本解决方案的dll）可以自动的选中</Description>
   </Metadata>
-  <Installation>
-    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)">
+  <Installation AllUsers="true">
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0, 20.0)">
+      <ProductArchitecture>amd64</ProductArchitecture>
+    </InstallationTarget>
+    <InstallationTarget Version="[16.0,20.0)" Id="Microsoft.VisualStudio.Enterprise">
+      <ProductArchitecture>amd64</ProductArchitecture>
+    </InstallationTarget>
+    <InstallationTarget Version="[16.0,20.0)" Id="Microsoft.VisualStudio.Pro">
       <ProductArchitecture>amd64</ProductArchitecture>
     </InstallationTarget>
   </Installation>
   <Dependencies>
-    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.5,)" />
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.5,4.9)" />
   </Dependencies>
   <Prerequisites>
-    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.0,18.0)" DisplayName="Visual Studio core editor" />
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.0,20.0)" DisplayName="Visual Studio core editor" />
   </Prerequisites>
   <Assets>
     <Asset Type="Microsoft.VisualStudio.VsPackage" Path="dotNETReactorHelper.pkgdef" />

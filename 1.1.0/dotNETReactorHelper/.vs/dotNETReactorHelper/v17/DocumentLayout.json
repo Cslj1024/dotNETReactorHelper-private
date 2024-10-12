@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Projects\\VSIX Project\\GitHouse\\1.1.0\\dotNETReactorHelper\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9722DB8A-D913-44F7-8A00-874716CD2F80}|dotNETReactorHelper.csproj|D:\\Projects\\VSIX Project\\GitHouse\\1.1.0\\dotNETReactorHelper\\source.extension.vsixmanifest||{2868F8ED-DE25-439D-9F59-AD52458E9328}",
+      "RelativeMoniker": "D:0:0:{9722DB8A-D913-44F7-8A00-874716CD2F80}|dotNETReactorHelper.csproj|solutionrelative:source.extension.vsixmanifest||{2868F8ED-DE25-439D-9F59-AD52458E9328}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9722DB8A-D913-44F7-8A00-874716CD2F80}|dotNETReactorHelper.csproj|d:\\projects\\vsix project\\githouse\\1.1.0\\dotnetreactorhelper\\reactorhelpercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9722DB8A-D913-44F7-8A00-874716CD2F80}|dotNETReactorHelper.csproj|solutionrelative:reactorhelpercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9722DB8A-D913-44F7-8A00-874716CD2F80}|dotNETReactorHelper.csproj|D:\\Projects\\VSIX Project\\GitHouse\\1.1.0\\dotNETReactorHelper\\dotnetreactorhelperpackage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9722DB8A-D913-44F7-8A00-874716CD2F80}|dotNETReactorHelper.csproj|solutionrelative:dotnetreactorhelperpackage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9722DB8A-D913-44F7-8A00-874716CD2F80}|dotNETReactorHelper.csproj|D:\\Projects\\VSIX Project\\GitHouse\\1.1.0\\dotNETReactorHelper\\source.extension.vsixmanifest||{2868F8ED-DE25-439D-9F59-AD52458E9328}",
-      "RelativeMoniker": "D:0:0:{9722DB8A-D913-44F7-8A00-874716CD2F80}|dotNETReactorHelper.csproj|solutionrelative:source.extension.vsixmanifest||{2868F8ED-DE25-439D-9F59-AD52458E9328}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,22 +30,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "source.extension.vsixmanifest [Design]",
               "DocumentMoniker": "D:\\Projects\\VSIX Project\\GitHouse\\1.1.0\\dotNETReactorHelper\\source.extension.vsixmanifest",
               "RelativeDocumentMoniker": "source.extension.vsixmanifest",
               "ToolTip": "D:\\Projects\\VSIX Project\\GitHouse\\1.1.0\\dotNETReactorHelper\\source.extension.vsixmanifest [Design]",
               "RelativeToolTip": "source.extension.vsixmanifest [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
-              "WhenOpened": "2024-09-06T09:05:07.428Z"
+              "WhenOpened": "2024-09-06T09:05:07.428Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ReactorHelperCommand.cs",
               "DocumentMoniker": "D:\\Projects\\VSIX Project\\GitHouse\\1.1.0\\dotNETReactorHelper\\ReactorHelperCommand.cs",
               "RelativeDocumentMoniker": "ReactorHelperCommand.cs",
@@ -58,7 +59,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "LogHelper.cs",
               "DocumentMoniker": "D:\\Projects\\VSIX Project\\GitHouse\\1.1.0\\dotNETReactorHelper\\LogHelper.cs",
               "RelativeDocumentMoniker": "LogHelper.cs",
@@ -70,7 +71,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "dotNETReactorHelperPackage.vsct",
               "DocumentMoniker": "D:\\Projects\\VSIX Project\\GitHouse\\1.1.0\\dotNETReactorHelper\\dotNETReactorHelperPackage.vsct",
               "RelativeDocumentMoniker": "dotNETReactorHelperPackage.vsct",
@@ -82,7 +83,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "dotNETReactorHelperPackage.cs",
               "DocumentMoniker": "D:\\Projects\\VSIX Project\\GitHouse\\1.1.0\\dotNETReactorHelper\\dotNETReactorHelperPackage.cs",
               "RelativeDocumentMoniker": "dotNETReactorHelperPackage.cs",

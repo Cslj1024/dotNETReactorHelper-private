@@ -2,28 +2,28 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.VisualStudio.Shell;
 using Newtonsoft.Json;
-
+using ReactorHelper;
 
 namespace dotNETReactorHelper
 {
     public partial class DisPlayForm : Form
     {
-        //private string ConfigFilePath = Path.Combine(Application.StartupPath ,"citedllconfig.json");
         string ConfigFilePath = Application.StartupPath + "\\citedllconfig.json";
 
         private List<string> exePath = new List<string>();
-
         private List<string> dllPaths = new List<string>();
-
         public List<string> SelectedCiteDllPaths { get; private set; }
         public List<string> SelectedDllPaths { get; private set; }
+        public List<string> guids { get; private set; }
 
-
-        public DisPlayForm(List<string> exeAndDllPaths, List<string> citedllPaths)
+        public DisPlayForm(List<string> exeAndDllPaths, List<string> citedllPaths, List<string> guids)
         {
             InitializeComponent();
+            this.guids = guids;
             InitializeCheckBoxAll();
             PartexeAndDllPaths(exeAndDllPaths);
             InitializeCheckedListBox(dllPaths, citedllPaths);
@@ -34,7 +34,6 @@ namespace dotNETReactorHelper
         private void InitializeCheckBoxAll()
         {
             checkBoxCiteDllAll.CheckedChanged += checkBoxCiteDllAll_CheckedChanged;
-
             checkBoxDllAll.CheckedChanged += checkBoxDllAll_CheckedChanged;
         }
 
@@ -58,7 +57,6 @@ namespace dotNETReactorHelper
         {
             checkedListBoxDll.Items.Clear();
             checkedListBoxCiteDll.Items.Clear();
-
             foreach (var dllPath in dllPaths)
             {
                 checkedListBoxDll.Items.Add(dllPath);
@@ -67,8 +65,6 @@ namespace dotNETReactorHelper
             {
                 checkedListBoxCiteDll.Items.Add(citedllPath);
             }
-
-            //dll默认全选
             for (int i = 0; i < checkedListBoxDll.Items.Count; i++)
             {
                 checkedListBoxDll.SetItemChecked(i, true);
@@ -77,10 +73,10 @@ namespace dotNETReactorHelper
 
         private void InitializeTextBox(List<string> exePath)
         {
-            textBoxExe.Text = exePath[0];
+            textBoxExe.Text = exePath.FirstOrDefault();
         }
 
-        //引用的dll文件全选
+        // 引用的dll文件全选
         private void checkBoxDllAll_CheckedChanged(object sender, EventArgs e)
         {
             bool isChecked = checkBoxDllAll.Checked;
@@ -90,36 +86,23 @@ namespace dotNETReactorHelper
             }
         }
 
-        //外部的dll文件全选
+        // 外部的dll文件全选
         private void checkBoxCiteDllAll_CheckedChanged(object sender, EventArgs e)
         {
-            bool isCheked = checkBoxCiteDllAll.Checked;
+            bool isChecked = checkBoxCiteDllAll.Checked;
             for (int i = 0; i < checkedListBoxCiteDll.Items.Count; i++)
             {
-                checkedListBoxCiteDll.SetItemChecked(i, isCheked);
+                checkedListBoxCiteDll.SetItemChecked(i, isChecked);
             }
         }
 
-        //确定按钮
+        // 确定按钮
         private void buttonEnter_Click(object sender, EventArgs e)
         {
-            SelectedDllPaths = new List<string>();
-            foreach (var item in checkedListBoxDll.CheckedItems)
-            {
-                SelectedDllPaths.Add(item.ToString());
-            }
-
-            SelectedCiteDllPaths = new List<string>();
-            foreach (var item in checkedListBoxCiteDll.CheckedItems)
-            {
-                SelectedCiteDllPaths.Add(item.ToString());
-            }
-
-            //将exe文件路径加入到SelectedDllPaths中
+            SelectedDllPaths = checkedListBoxDll.CheckedItems.Cast<string>().ToList();
+            SelectedCiteDllPaths = checkedListBoxCiteDll.CheckedItems.Cast<string>().ToList();
             SelectedDllPaths.AddRange(exePath);
-            //将引入的dll文件路径加入到配置文件中
-            SaveSelectedItemsToConfig(SelectedCiteDllPaths);
-
+            SaveConfigData(new ConfigData { Guid = guids.First(), SelectedCiteDllPaths = SelectedCiteDllPaths });
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
@@ -127,98 +110,101 @@ namespace dotNETReactorHelper
         //重选操作
         private void RestoreCheckItems()
         {
-            var savePaths = LoadSelectedItemsFromConfig();
-            if (savePaths != null)
+            var configData = LoadConfigData();
+
+            if (configData != null && configData.Count > 0)
             {
-                // 创建两个列表，一个保存选中的项，一个保存未选中的项
-                var checkedItems = new List<string>();
-                var uncheckedItems = new List<string>();
-
-                for (int i = 0; i < checkedListBoxCiteDll.Items.Count; i++)
+                var matchedGuids = configData.Where(item => guids.Contains(item.Guid)).ToList();
+                if (matchedGuids.Any())
                 {
-                    var item = checkedListBoxCiteDll.Items[i].ToString();
-                    if (savePaths.Contains(item)) // 如果该项在已保存的选中路径中
+                    var matchedGuid = matchedGuids.First();
+                    SelectedCiteDllPaths = matchedGuid.SelectedCiteDllPaths;
+
+                    // 保留所有项，并将选中的项移动到最前面
+                    var allItems = new List<string>();
+                    var selectedItems = new List<string>();
+
+                    foreach (var item in checkedListBoxCiteDll.Items)
                     {
-                        checkedItems.Add(item);  // 添加到已选中列表
+                        if (SelectedCiteDllPaths.Contains(item.ToString()))
+                        {
+                            selectedItems.Add(item.ToString());
+                        }
+                        else
+                        {
+                            allItems.Add(item.ToString());
+                        }
                     }
-                    else
+
+                    // 清空列表并重新添加，选中的项在前
+                    checkedListBoxCiteDll.Items.Clear();
+                    checkedListBoxCiteDll.Items.AddRange(selectedItems.ToArray());
+                    checkedListBoxCiteDll.Items.AddRange(allItems.ToArray());
+
+                    // 更新选中状态
+                    for (int i = 0; i < checkedListBoxCiteDll.Items.Count; i++)
                     {
-                        uncheckedItems.Add(item);  // 添加到未选中列表
+                        checkedListBoxCiteDll.SetItemChecked(i, SelectedCiteDllPaths.Contains(checkedListBoxCiteDll.Items[i].ToString()));
                     }
                 }
-
-                // 清空 checkedListBoxCiteDll 中的所有项
-                checkedListBoxCiteDll.Items.Clear();
-
-                // 先添加选中的项到 checkedListBoxCiteDll，并将其设置为选中状态
-                foreach (var checkedItem in checkedItems)
+                else
                 {
-                    checkedListBoxCiteDll.Items.Add(checkedItem, true);
+                    // 如果没有匹配的 GUID，保存新的配置
+                    SaveConfigData(new ConfigData { Guid = guids.First(), SelectedCiteDllPaths = new List<string>() });
                 }
-
-                // 再添加未选中的项到 checkedListBoxCiteDll，并将其设置为未选中状态
-                foreach (var uncheckedItem in uncheckedItems)
-                {
-                    checkedListBoxCiteDll.Items.Add(uncheckedItem, false);
-                }
+            }
+            else
+            {
+                // 如果配置文件为空，保存新的配置
+                SaveConfigData(new ConfigData { Guid = guids.First(), SelectedCiteDllPaths = new List<string>() });
             }
         }
 
 
-        private void SaveSelectedItemsToConfig(List<string> selectedPaths)
+
+        private void SaveConfigData(ConfigData configData)
         {
             try
             {
-                string json = JsonConvert.SerializeObject(selectedPaths, Formatting.Indented);
+                var currentConfig = LoadConfigData() ?? new List<ConfigData>();
+                currentConfig.RemoveAll(c => c.Guid == configData.Guid);
+                currentConfig.Add(configData);
+                string json = JsonConvert.SerializeObject(currentConfig, Formatting.Indented);
                 File.WriteAllText(ConfigFilePath, json);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("保存到配置文件失败" + ex.Message);
+                MessageBox.Show("保存到配置文件失败: " + ex.Message);
             }
         }
 
-        private List<string> LoadSelectedItemsFromConfig()
+        private List<ConfigData> LoadConfigData()
         {
-            System.Diagnostics.Debug.WriteLine(ConfigFilePath);
-
-            try
+            if (File.Exists(ConfigFilePath))
             {
-                if (File.Exists(ConfigFilePath))
-                {
-                    string json = File.ReadAllText(ConfigFilePath);
-                    return JsonConvert.DeserializeObject<List<string>>(json);
-                }
-                else
-                {
-                    MessageBox.Show("citedllconfig.json文件不存在，在当前文件夹" + Application.StartupPath + "中创建citedllconfig.json");
-                    File.Create(ConfigFilePath);
-
-                    string json = File.ReadAllText(ConfigFilePath);
-                    return JsonConvert.DeserializeObject<List<string>>(json);
-                }
+                string json = File.ReadAllText(ConfigFilePath);
+                return JsonConvert.DeserializeObject<List<ConfigData>>(json);
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show("加载citedllconfig.json文件失败" + ex.Message);
-                System.Diagnostics.Debug.WriteLine(ex.Message);
+                System.Diagnostics.Debug.WriteLine("配置文件citedllconfig.json不存在，将在\\Common7\\IDE中创建配置文件...");
+                File.Create(ConfigFilePath).Close();
             }
-            return new List<string>();
+            return new List<ConfigData>();
         }
 
-        private void checkedListBoxCiteDll_SelectedIndexChanged(object sender, EventArgs e)
+        private class ConfigData
         {
-
+            public string Guid { get; set; }
+            public List<string> SelectedCiteDllPaths { get; set; }
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
+       
 
-        }
+        private void checkedListBoxCiteDll_SelectedIndexChanged(object sender, EventArgs e) { }
 
-        private void DisPlayForm_Load(object sender, EventArgs e)
-        {
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e) { }
 
-        }
+        private void DisPlayForm_Load(object sender, EventArgs e) { }
     }
 }

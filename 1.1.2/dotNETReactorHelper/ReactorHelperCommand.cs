@@ -65,6 +65,8 @@ namespace dotNETReactorHelper
                     string solutionPath = solution.FullName;
                     string solutionDirectory = Path.GetDirectoryName(solutionPath);
 
+                    string ConfigFilePath = Application.StartupPath + "\\citedllconfig.json";
+
                     // 获取当前活动配置是 "Debug" 还是 "Release"
                     string activeConfiguration = GetActiveConfiguration(dte);
                     await LogMessageAsync($"当前活动配置: {activeConfiguration}");
@@ -78,8 +80,17 @@ namespace dotNETReactorHelper
                     // 从dll文件夹和活动解决方案配置（Debug或Release）中获取引用的 .dll 文件路径
                     var referencedDllPaths = GetReferencedDllPaths(solutionDirectory, activeConfiguration).ToList();
 
+                    //获取WinExe中的GUID
+                    var exeGuid = GetWinExeProjectGuids(solutionPath);
+
+                    //判断配置文件是否存在
+                    string isExistsifm = IsExistsConfig(ConfigFilePath);
+                    await LogMessageAsync($"{isExistsifm}");
+                    
+
                     //打开 DisPlayForm 让用户选择要混淆的 DLL
-                    using (var displayForm = new DisPlayForm(exeAndDllPaths, referencedDllPaths))
+                    List<string> guids = GetWinExeProjectGuids(solutionPath);
+                    using (var displayForm = new DisPlayForm(exeAndDllPaths, referencedDllPaths, guids))
                     {
                         var result = displayForm.ShowDialog();
                         if (result == DialogResult.OK)
@@ -209,6 +220,46 @@ namespace dotNETReactorHelper
             return paths;
         }
 
+        private static List<string> GetWinExeProjectGuids(string solutionPath)
+        {
+            var projectGuids = new List<string>();
+            string solutionDirectory = Path.GetDirectoryName(solutionPath);
+
+            // 获取解决方案中的所有 .csproj 路径
+            foreach (var line in File.ReadLines(solutionPath))
+            {
+                var match = Regex.Match(line, @"""([^""]+\.csproj)""");
+                if (match.Success)
+                {
+                    var relativeProjectPath = match.Groups[1].Value;
+                    var absoluteProjectPath = Path.Combine(solutionDirectory, relativeProjectPath);
+
+                    // 读取 .csproj 文件以查找 <OutputType>WinExe</OutputType> 和 <ProjectGuid>
+                    if (File.Exists(absoluteProjectPath))
+                    {
+                        var xdoc = XDocument.Load(absoluteProjectPath);
+                        XNamespace ns = xdoc.Root.Name.Namespace;
+
+                        // 检查 <OutputType> 是否为 WinExe
+                        var outputType = xdoc.Descendants(ns + "OutputType").FirstOrDefault()?.Value;
+                        if (outputType != null && outputType.Equals("WinExe", StringComparison.OrdinalIgnoreCase))
+                        {
+                            // 提取 <ProjectGuid>
+                            var projectGuid = xdoc.Descendants(ns + "ProjectGuid").FirstOrDefault()?.Value;
+                            if (!string.IsNullOrEmpty(projectGuid))
+                            {
+                                projectGuids.Add(projectGuid);
+                            }
+                        }
+                    }
+                }
+            }
+
+            return projectGuids;
+        }
+
+
+
         private static string GetOutputPath(XDocument xdoc, XNamespace ns, string activeConfiguration)
         {
             var outputPath = xdoc.Descendants(ns + "PropertyGroup")
@@ -325,6 +376,20 @@ namespace dotNETReactorHelper
                     System.Threading.Thread.Sleep(100);
                 }
             });
+        }
+
+        //鸡肋
+        private static string IsExistsConfig(string ConfigfilePath)
+        {
+            if (File.Exists(ConfigfilePath))
+            {
+                return null;
+            }
+            else
+            {
+                string NoExists = "配置文件citedllconfig.json不存在，将在\\Common7\\IDE中创建配置文件...";
+                return NoExists;
+            }
         }
     }
 

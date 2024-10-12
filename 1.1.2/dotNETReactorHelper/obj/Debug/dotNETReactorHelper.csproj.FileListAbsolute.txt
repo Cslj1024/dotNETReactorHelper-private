@@ -1,8 +1,6 @@
 D:\Projects\VSIX Project\GitHouse\1.1.2\dotNETReactorHelper\bin\Debug\dotNETReactorHelper.dll
 D:\Projects\VSIX Project\GitHouse\1.1.2\dotNETReactorHelper\bin\Debug\dotNETReactorHelper.pdb
 D:\Projects\VSIX Project\GitHouse\1.1.2\dotNETReactorHelper\bin\Debug\dotNETReactorHelper.pkgdef
-D:\Projects\VSIX Project\GitHouse\1.1.2\dotNETReactorHelper\bin\Debug\dotNETReactorHelper.vsix
-D:\Projects\VSIX Project\GitHouse\1.1.2\dotNETReactorHelper\bin\Debug\extension.vsixmanifest
 D:\Projects\VSIX Project\GitHouse\1.1.2\dotNETReactorHelper\bin\Debug\envdte.dll
 D:\Projects\VSIX Project\GitHouse\1.1.2\dotNETReactorHelper\bin\Debug\MessagePack.dll
 D:\Projects\VSIX Project\GitHouse\1.1.2\dotNETReactorHelper\bin\Debug\MessagePack.Annotations.dll
@@ -216,6 +214,8 @@ D:\Projects\VSIX Project\GitHouse\1.1.2\dotNETReactorHelper\obj\Debug\dotNETReac
 D:\Projects\VSIX Project\GitHouse\1.1.2\dotNETReactorHelper\obj\Debug\dotNETReactorHelper.pdb
 D:\Projects\VSIX Project\GitHouse\1.1.2\dotNETReactorHelper\obj\Debug\dotNETReactorHelper.pkgdef
 D:\Projects\VSIX Project\GitHouse\1.1.2\dotNETReactorHelper\obj\Debug\dotNETReactorHelper.latest.pkgdef
+D:\Projects\VSIX Project\GitHouse\1.1.2\dotNETReactorHelper\bin\Debug\dotNETReactorHelper.vsix
+D:\Projects\VSIX Project\GitHouse\1.1.2\dotNETReactorHelper\bin\Debug\extension.vsixmanifest
 D:\Projects\VSIX Project\GitHouse\1.1.2\dotNETReactorHelper\obj\Debug\extension.vsixmanifest
 D:\Projects\VSIX Project\GitHouse\1.1.2\dotNETReactorHelper\obj\Debug\files.json
 D:\Projects\VSIX Project\GitHouse\1.1.2\dotNETReactorHelper\obj\Debug\createTemplateManifests.cache

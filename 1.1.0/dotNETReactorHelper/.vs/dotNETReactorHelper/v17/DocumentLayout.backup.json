@@ -30,12 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 4,
@@ -55,7 +51,7 @@
               "RelativeDocumentMoniker": "ReactorHelperCommand.cs",
               "ToolTip": "D:\\Projects\\VSIX Project\\GitHouse\\1.1.0\\dotNETReactorHelper\\ReactorHelperCommand.cs",
               "RelativeToolTip": "ReactorHelperCommand.cs",
-              "ViewState": "AgIAACsCAAAAAAAAAADwv0UCAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAIwEUCAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-06T09:00:07.582Z",
               "EditorCaption": ""
