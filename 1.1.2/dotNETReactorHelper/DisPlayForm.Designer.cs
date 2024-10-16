@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.checkedListBoxCiteDll = new System.Windows.Forms.CheckedListBox();
             this.checkedListBoxDll = new System.Windows.Forms.CheckedListBox();
@@ -38,6 +39,9 @@
             this.textBoxExe = new System.Windows.Forms.TextBox();
             this.checkBoxDllAll = new System.Windows.Forms.CheckBox();
             this.checkBoxCiteDllAll = new System.Windows.Forms.CheckBox();
+            this.ClickEnterprogressBar = new System.Windows.Forms.ProgressBar();
+            this.ClickEnterLabel = new System.Windows.Forms.Label();
+            this.ClickEnterTimer = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,9 +49,9 @@
             // 
             this.tableLayoutPanel1.AutoSize = true;
             this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.Controls.Add(this.checkedListBoxCiteDll, 0, 6);
             this.tableLayoutPanel1.Controls.Add(this.checkedListBoxDll, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.buttonEnter, 1, 8);
@@ -57,6 +61,8 @@
             this.tableLayoutPanel1.Controls.Add(this.textBoxExe, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.checkBoxDllAll, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.checkBoxCiteDllAll, 1, 7);
+            this.tableLayoutPanel1.Controls.Add(this.ClickEnterprogressBar, 2, 8);
+            this.tableLayoutPanel1.Controls.Add(this.ClickEnterLabel, 2, 7);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -115,7 +121,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelexe.Location = new System.Drawing.Point(3, 0);
             this.labelexe.Name = "labelexe";
-            this.labelexe.Size = new System.Drawing.Size(130, 22);
+            this.labelexe.Size = new System.Drawing.Size(154, 22);
             this.labelexe.TabIndex = 0;
             this.labelexe.Text = "exe文件";
             // 
@@ -126,7 +132,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelcitedll.Location = new System.Drawing.Point(3, 230);
             this.labelcitedll.Name = "labelcitedll";
-            this.labelcitedll.Size = new System.Drawing.Size(130, 22);
+            this.labelcitedll.Size = new System.Drawing.Size(154, 22);
             this.labelcitedll.TabIndex = 2;
             this.labelcitedll.Text = "外部的dll文件";
             // 
@@ -137,7 +143,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labeldll.Location = new System.Drawing.Point(3, 67);
             this.labeldll.Name = "labeldll";
-            this.labeldll.Size = new System.Drawing.Size(130, 22);
+            this.labeldll.Size = new System.Drawing.Size(154, 22);
             this.labeldll.TabIndex = 1;
             this.labeldll.Text = "引用的dll文件";
             // 
@@ -154,7 +160,7 @@
             // checkBoxDllAll
             // 
             this.checkBoxDllAll.AutoSize = true;
-            this.checkBoxDllAll.Location = new System.Drawing.Point(139, 204);
+            this.checkBoxDllAll.Location = new System.Drawing.Point(163, 204);
             this.checkBoxDllAll.Name = "checkBoxDllAll";
             this.checkBoxDllAll.Size = new System.Drawing.Size(59, 19);
             this.checkBoxDllAll.TabIndex = 10;
@@ -165,13 +171,34 @@
             // checkBoxCiteDllAll
             // 
             this.checkBoxCiteDllAll.AutoSize = true;
-            this.checkBoxCiteDllAll.Location = new System.Drawing.Point(139, 390);
+            this.checkBoxCiteDllAll.Location = new System.Drawing.Point(163, 390);
             this.checkBoxCiteDllAll.Name = "checkBoxCiteDllAll";
             this.checkBoxCiteDllAll.Size = new System.Drawing.Size(59, 19);
             this.checkBoxCiteDllAll.TabIndex = 11;
             this.checkBoxCiteDllAll.Text = "全选";
             this.checkBoxCiteDllAll.UseVisualStyleBackColor = true;
             this.checkBoxCiteDllAll.CheckedChanged += new System.EventHandler(this.checkBoxCiteDllAll_CheckedChanged);
+            // 
+            // ClickEnterprogressBar
+            // 
+            this.ClickEnterprogressBar.Location = new System.Drawing.Point(643, 419);
+            this.ClickEnterprogressBar.MarqueeAnimationSpeed = 1000;
+            this.ClickEnterprogressBar.Maximum = 8000;
+            this.ClickEnterprogressBar.Name = "ClickEnterprogressBar";
+            this.ClickEnterprogressBar.Size = new System.Drawing.Size(154, 23);
+            this.ClickEnterprogressBar.TabIndex = 12;
+            // 
+            // ClickEnterLabel
+            // 
+            this.ClickEnterLabel.Location = new System.Drawing.Point(643, 387);
+            this.ClickEnterLabel.Name = "ClickEnterLabel";
+            this.ClickEnterLabel.Size = new System.Drawing.Size(154, 29);
+            this.ClickEnterLabel.TabIndex = 13;
+            this.ClickEnterLabel.Text = "label1";
+            // 
+            // ClickEnterTimer
+            // 
+            this.ClickEnterTimer.Tick += new System.EventHandler(this.ClickEnterTimer_Tick);
             // 
             // DisPlayForm
             // 
@@ -201,5 +228,8 @@
         private System.Windows.Forms.TextBox textBoxExe;
         private System.Windows.Forms.CheckBox checkBoxDllAll;
         private System.Windows.Forms.CheckBox checkBoxCiteDllAll;
+        private System.Windows.Forms.ProgressBar ClickEnterprogressBar;
+        private System.Windows.Forms.Label ClickEnterLabel;
+        private System.Windows.Forms.Timer ClickEnterTimer;
     }
 }

@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.VisualStudio.Shell;
 using Newtonsoft.Json;
+using System.Threading;
 using ReactorHelper;
+using Timer = System.Windows.Forms.Timer;
+
+
 
 namespace dotNETReactorHelper
 {
@@ -20,6 +24,10 @@ namespace dotNETReactorHelper
         public List<string> SelectedDllPaths { get; private set; }
         public List<string> guids { get; private set; }
 
+        private Timer countdownTimer; // 倒计时的Timer
+        private int countdown = 10;    // 倒计时秒数
+
+
         public DisPlayForm(List<string> exeAndDllPaths, List<string> citedllPaths, List<string> guids)
         {
             InitializeComponent();
@@ -29,7 +37,43 @@ namespace dotNETReactorHelper
             InitializeCheckedListBox(dllPaths, citedllPaths);
             InitializeTextBox(exePath);
             RestoreCheckItems();
+
+            InitializeCountdown();  // 初始化倒计时控件
         }
+
+        private void DisPlayForm_Load(object sender, EventArgs e)
+        {
+            // 启动倒计时
+            countdownTimer.Start();
+        }
+
+        // 初始化倒计时逻辑
+        private void InitializeCountdown()
+        {
+            countdownTimer = new System.Windows.Forms.Timer();
+            countdownTimer.Interval = 1000; // 每秒触发一次
+            countdownTimer.Tick += ClickEnterTimer_Tick;
+
+            ClickEnterprogressBar.Maximum = countdown; // 设置进度条最大值
+            ClickEnterprogressBar.Value = 0;            // 初始化进度为0
+            ClickEnterLabel.Text = $"{countdown} 秒后自动混淆"; // 显示初始倒计时
+        }
+
+        // 每秒触发的倒计时逻辑
+        private void ClickEnterTimer_Tick(object sender, EventArgs e)
+        {
+            countdown--;  // 每秒减少1
+            ClickEnterLabel.Text = $"{countdown} 秒后自动混淆"; // 更新Label文本
+
+            ClickEnterprogressBar.Value = ClickEnterprogressBar.Maximum - countdown; // 更新进度条
+
+            if (countdown <= 0)
+            {
+                countdownTimer.Stop(); // 停止计时器
+                buttonEnter.PerformClick(); // 模拟点击按钮
+            }
+        }
+
 
         private void InitializeCheckBoxAll()
         {
@@ -160,6 +204,8 @@ namespace dotNETReactorHelper
             }
         }
 
+        
+
 
 
         private void SaveConfigData(ConfigData configData)
@@ -205,6 +251,6 @@ namespace dotNETReactorHelper
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e) { }
 
-        private void DisPlayForm_Load(object sender, EventArgs e) { }
+        
     }
 }

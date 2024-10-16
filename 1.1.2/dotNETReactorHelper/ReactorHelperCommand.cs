@@ -533,19 +533,19 @@ namespace dotNETReactorHelper
                 Type t2 = sender.GetType();
                 Form m = sender as Form;
 
-                SetExeName2(t2, m);
+                SetExeName(t2, m);
 
-                addDlls(t2, m);
+                AddDlls(t2, m);
 
-                checkParameter(t2, m);
+                CheckParameter(t2, m);
 
-                doProtect(t2, m);
+                DoProtect(t2, m);
 
-                bool exeOk = await waitOK(t2, m);
+                bool exeOk = await WaitOK(t2, m);
 
                 if (exeOk)
                 {
-                    coverExe(t2, m);
+                    CoverExe(t2, m);
                     await WriteLogAsync("混淆完成！");
                 }
                 else
@@ -561,7 +561,7 @@ namespace dotNETReactorHelper
             }
         }
 
-        private void SetExeName2(Type t2, Form m)
+        private void SetExeName(Type t2, Form m)
         {
             FieldInfo finfoS = t2.GetField("GWb68qY3BI7", BindingFlags.NonPublic | BindingFlags.Static);
             if (finfoS != null)
@@ -583,7 +583,7 @@ namespace dotNETReactorHelper
             finfo.Invoke(m, paras);
         }
 
-        private void addDlls(Type t2, Form m)
+        private void AddDlls(Type t2, Form m)
         {
             foreach (string path in dllPath)
             {
@@ -594,7 +594,7 @@ namespace dotNETReactorHelper
             }
         }
 
-        private void checkParameter(Type t2, Form m)
+        private void CheckParameter(Type t2, Form m)
         {
             string[] needCheck = {
                         "BhG6TTKjMLT",
@@ -604,7 +604,7 @@ namespace dotNETReactorHelper
                     };
             for (int i = 0; i < needCheck.Length; i++)
             {
-                checkItems(t2, m, needCheck[i], true);
+                CheckItems(t2, m, needCheck[i], true);
             }
 
             string[] noneCheck = {
@@ -614,26 +614,26 @@ namespace dotNETReactorHelper
                     };
             for (int i = 0; i < noneCheck.Length; i++)
             {
-                checkItems(t2, m, noneCheck[i], false);
+                CheckItems(t2, m, noneCheck[i], false);
             }
             ThreadHelper.JoinableTaskFactory.Run(async () => await WriteLogAsync("混淆选项设置完成！"));
             ThreadHelper.JoinableTaskFactory.Run(async () => await WriteLogAsync("混淆中..."));
         }
 
-        private void checkItems(Type t, object instance, string fieldName, bool ifCheck)
+        private void CheckItems(Type t, object instance, string fieldName, bool ifCheck)
         {
             FieldInfo finfo = t.GetField(fieldName, BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Public);
             CheckBox checkBox1 = (CheckBox)finfo.GetValue(instance);
             checkBox1.Checked = ifCheck;
         }
 
-        private void doProtect(Type t2, Form m)
+        private void DoProtect(Type t2, Form m)
         {
             MethodInfo minfo = t2.GetMethod("ph36mdvTtnm", BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public);
             minfo.Invoke(m, new object[] { null, null });
         }
 
-        private async Task<bool> waitOK(Type t2, Form m)
+        private async Task<bool> WaitOK(Type t2, Form m)
         {
             bool result = false;
 
@@ -738,7 +738,7 @@ namespace dotNETReactorHelper
         }
 
 
-        private void coverExe(Type t2, Form m)
+        private void CoverExe(Type t2, Form m)
         {
             foreach (string path in dllPath)
             {
