@@ -691,6 +691,7 @@ namespace dotNETReactorHelper
 
             return result;
         }
+
         delegate string GetValueDele(PropertyInfo pinfo, object o);
         string GetValue(PropertyInfo pinfo, object o)
         {

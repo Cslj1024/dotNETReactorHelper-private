@@ -25,7 +25,7 @@ namespace dotNETReactorHelper
         public List<string> guids { get; private set; }
 
         private Timer countdownTimer; // 倒计时的Timer
-        private int countdown = 10;    // 倒计时秒数
+        private int countdown = 8;    // 倒计时秒数
 
 
         public DisPlayForm(List<string> exeAndDllPaths, List<string> citedllPaths, List<string> guids)

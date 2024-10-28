@@ -56,7 +56,7 @@
         <Parent guid="guiddotNETReactorHelperPackageCmdSet" id="MyMenuGroup" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings>
-          <ButtonText>ReactorHelper1.1.2</ButtonText>
+          <ButtonText>dotNETReactorHelper1.1.2</ButtonText>
         </Strings>
       </Button>
     </Buttons>
